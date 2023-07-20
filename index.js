@@ -1,5 +1,5 @@
 const { Telegraf } = require('telegraf')
-const bot = new Telegraf('6369002088:AAHk2gkElzBp594TXpVdLfFYpRhjDYcAgBQ')
+const bot = new Telegraf(process.env.BOT_TOKEN);
 
 bot.use(require('./composers/start.composer.js'))
 bot.use(require('./composers/back-buttons.composer.js'))
